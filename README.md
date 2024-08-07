@@ -4,7 +4,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](http://forthebadge.com)
 
 <p>
-    <img alt="Get it on Google Play" title="Google Play" src="http://i.imgur.com/mtGRPuM.png](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/300px-Node.js_logo.svg.png" width="140">
+    <img alt="Get it on Google Play" title="Google Play" src="https://es.wikipedia.org/wiki/Archivo:Node.js_logo.svg" width="140">
 </p>
 
 ## 🚩 Caracteristicas
