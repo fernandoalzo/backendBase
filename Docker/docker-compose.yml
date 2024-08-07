@@ -1,0 +1,22 @@
+version: "1.0"
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=creditCommunity
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=12345
+      - TZ=America/Bogota
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=root@mail.com
+      - PGADMIN_DEFAULT_PASSWORD=12345
+      - TZ=America/Bogota
+    ports:
+      - "5050:80"
