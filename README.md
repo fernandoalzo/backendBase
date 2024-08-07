@@ -8,6 +8,7 @@
 * users and roles handling.
 * docker file for database.
 * authtentication and roles segmentation.
+* nodeJs
 
 ## Instalacion
 Ejecutar dentro del directorio raiz del proyecto.
