@@ -3,10 +3,6 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](http://forthebadge.com)
 
-<p>
-    <img alt="Get it on Google Play" title="Google Play" src="[https://es.wikipedia.org/wiki/Archivo:Node.js_logo.svg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FNode.js&psig=AOvVaw3imhmRESOcJEQYEGkzn76i&ust=1723171652453000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKDIteOw5IcDFQAAAAAdAAAAABAE)" width="140">
-</p>
-
 ## 🚩 Caracteristicas
 
 * users and roles handling.
