@@ -1,10 +1,10 @@
 _type: export
 __export_format: 4
-__export_date: 2024-08-07T04:00:18.400Z
+__export_date: 2024-08-17T22:09:34.359Z
 __export_source: insomnia.desktop.app:v2023.5.8
 resources:
-  - _id: req_0478988a26ef4970865acc3243e43b65
-    parentId: fld_52c0326fc070402da7df72842e0e8f79
+  - _id: req_045464ba78b446ca9ee84b0e9a1c5b28
+    parentId: fld_21ba11905fde4b3589fdcfe5ec7b9d2f
     modified: 1722993577495
     created: 1722983855335
     url: "{{ _.apiHost }}/api/v1/setup/?step=initial"
@@ -26,8 +26,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: fld_52c0326fc070402da7df72842e0e8f79
-    parentId: wrk_213b7650779f49eaae29115c2bd66dcf
+  - _id: fld_21ba11905fde4b3589fdcfe5ec7b9d2f
+    parentId: wrk_7c2b6b26804f4fdcbfe0b87655e1ffde
     modified: 1722983858116
     created: 1722983855328
     name: setUp
@@ -36,17 +36,17 @@ resources:
     environmentPropertyOrder: null
     metaSortKey: -1722813627689
     _type: request_group
-  - _id: wrk_213b7650779f49eaae29115c2bd66dcf
+  - _id: wrk_7c2b6b26804f4fdcbfe0b87655e1ffde
     parentId: null
-    modified: 1722658686275
-    created: 1722658686275
-    name: CreditCommunity
+    modified: 1723932516830
+    created: 1723932474862
+    name: BackendBase
     description: ""
     scope: collection
     _type: workspace
-  - _id: req_a13215c72c804f03aaee668f01e7e889
-    parentId: fld_fe6f4fd02576426c9eca0e08dd11047a
-    modified: 1723002436959
+  - _id: req_6a8c7974627849a596bc7243fc3872cd
+    parentId: fld_eafc72f14cda4a178fa86dc521fec1ed
+    modified: 1723932537319
     created: 1722823638093
     url: "{{ _.apiHost }}/api/v1/auth/login"
     name: logIn
@@ -56,7 +56,7 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"username": "user1",
+        	"username": "admin",
         	"password": "password"
 
         }
@@ -76,8 +76,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: fld_fe6f4fd02576426c9eca0e08dd11047a
-    parentId: wrk_213b7650779f49eaae29115c2bd66dcf
+  - _id: fld_eafc72f14cda4a178fa86dc521fec1ed
+    parentId: wrk_7c2b6b26804f4fdcbfe0b87655e1ffde
     modified: 1722813627589
     created: 1722813627589
     name: auth
@@ -86,8 +86,8 @@ resources:
     environmentPropertyOrder: null
     metaSortKey: -1722813627589
     _type: request_group
-  - _id: req_72251af098ee42e5883327c52b6182ef
-    parentId: fld_fe6f4fd02576426c9eca0e08dd11047a
+  - _id: req_1796c70ec2c04a83a11c0bccd4926f0f
+    parentId: fld_eafc72f14cda4a178fa86dc521fec1ed
     modified: 1722998573032
     created: 1722825114690
     url: "{{ _.apiHost }}/api/v1/auth/validatetoken"
@@ -116,8 +116,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: req_c8a6456ef5324c07bcd2c7241131a414
-    parentId: fld_dcca8cbfc3674a6680dcf1a2ac60998c
+  - _id: req_1761c01d9600495496106030b6fa5689
+    parentId: fld_b66b08a6baea426f8f721678021d4851
     modified: 1723000031306
     created: 1722734758848
     url: "{{ _.apiHost }}/api/v1/users/findall"
@@ -149,8 +149,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: fld_dcca8cbfc3674a6680dcf1a2ac60998c
-    parentId: wrk_213b7650779f49eaae29115c2bd66dcf
+  - _id: fld_b66b08a6baea426f8f721678021d4851
+    parentId: wrk_7c2b6b26804f4fdcbfe0b87655e1ffde
     modified: 1722658696121
     created: 1722658696121
     name: users
@@ -159,8 +159,8 @@ resources:
     environmentPropertyOrder: null
     metaSortKey: -1722658696121
     _type: request_group
-  - _id: req_f60ae8e8adbe4c6198eb7f627f286230
-    parentId: fld_dcca8cbfc3674a6680dcf1a2ac60998c
+  - _id: req_70b5e42765cd4ec99c64efc63ee18a9c
+    parentId: fld_b66b08a6baea426f8f721678021d4851
     modified: 1723002482816
     created: 1722734677458
     url: "{{ _.apiHost }}/api/v1/users/findone/4"
@@ -184,8 +184,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: req_04fb0f11a7c2493394710330a26271d6
-    parentId: fld_dcca8cbfc3674a6680dcf1a2ac60998c
+  - _id: req_f6f6e418ec8c403aa02bc8ec343038e1
+    parentId: fld_b66b08a6baea426f8f721678021d4851
     modified: 1723002501005
     created: 1722734777843
     url: "{{ _.apiHost }}/api/v1/users/create"
@@ -225,8 +225,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: req_d1c64902f9ec40f596c5e59cf1b8f5e2
-    parentId: fld_dcca8cbfc3674a6680dcf1a2ac60998c
+  - _id: req_289ff40d0dd54064a821653b6f3e3c84
+    parentId: fld_b66b08a6baea426f8f721678021d4851
     modified: 1723002509939
     created: 1722735126034
     url: "{{ _.apiHost }}/api/v1/users/update/4"
@@ -259,8 +259,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: req_1f4dd4816dea443da1b2d801c415f86f
-    parentId: fld_dcca8cbfc3674a6680dcf1a2ac60998c
+  - _id: req_02a0c1b4df594062aeb592e0c449c460
+    parentId: fld_b66b08a6baea426f8f721678021d4851
     modified: 1723002525977
     created: 1722735146656
     url: "{{ _.apiHost }}/api/v1/users/delete/4"
@@ -284,8 +284,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: req_202cd9866ce949ddbe48007c7188cfde
-    parentId: fld_970fd187039f45bf93fc60e77d8db43e
+  - _id: req_7a88ef1efc344b609277fc5900015508
+    parentId: fld_7d05b5c1475345f3bfb33ca6b6751ba8
     modified: 1723003059886
     created: 1722979470036
     url: "{{ _.apiHost }}/api/v1/roles/findall"
@@ -309,8 +309,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: fld_970fd187039f45bf93fc60e77d8db43e
-    parentId: wrk_213b7650779f49eaae29115c2bd66dcf
+  - _id: fld_7d05b5c1475345f3bfb33ca6b6751ba8
+    parentId: wrk_7c2b6b26804f4fdcbfe0b87655e1ffde
     modified: 1722979470025
     created: 1722979470025
     name: roles
@@ -319,8 +319,8 @@ resources:
     environmentPropertyOrder: null
     metaSortKey: -1720539986050
     _type: request_group
-  - _id: req_34d0091567c24733892e58344b62ac68
-    parentId: fld_970fd187039f45bf93fc60e77d8db43e
+  - _id: req_08cf4f2cf36b4e40a739901f4954e55d
+    parentId: fld_7d05b5c1475345f3bfb33ca6b6751ba8
     modified: 1723003072043
     created: 1722979470033
     url: "{{ _.apiHost }}/api/v1/roles/findone/1"
@@ -344,8 +344,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: req_234747b37fad43869f6b3630fad5eaf4
-    parentId: fld_970fd187039f45bf93fc60e77d8db43e
+  - _id: req_d8ce78cfcd7d4c59a3a7e44f197bd9ed
+    parentId: fld_7d05b5c1475345f3bfb33ca6b6751ba8
     modified: 1723003083402
     created: 1722979470041
     url: "{{ _.apiHost }}/api/v1/roles/create"
@@ -376,8 +376,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: req_5589f4db0fbc43239622be7253bfe91a
-    parentId: fld_970fd187039f45bf93fc60e77d8db43e
+  - _id: req_962c28979e494e288340cd8bc4f63c36
+    parentId: fld_7d05b5c1475345f3bfb33ca6b6751ba8
     modified: 1723003097610
     created: 1722979470044
     url: "{{ _.apiHost }}/api/v1/roles/update/2"
@@ -410,8 +410,8 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: req_519925b3527c44f29627f65d67887121
-    parentId: fld_970fd187039f45bf93fc60e77d8db43e
+  - _id: req_6730f103bfda4faab2d68f0487898657
+    parentId: fld_7d05b5c1475345f3bfb33ca6b6751ba8
     modified: 1723003109812
     created: 1722979470047
     url: "{{ _.apiHost }}/api/v1/roles/delete/1"
@@ -435,14 +435,14 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: env_bb269b5beb1dd574c70d8b30bf46561b26b84936
-    parentId: wrk_213b7650779f49eaae29115c2bd66dcf
-    modified: 1723002942549
+  - _id: env_907212a7fdff49dab797ba209806cd19
+    parentId: wrk_7c2b6b26804f4fdcbfe0b87655e1ffde
+    modified: 1723932548858
     created: 1722658686281
     name: Base Environment
     data:
       apiHost: 127.0.0.1:3000
-      jwtToken: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXJuYW1lIjoidXNlcjEiLCJlbmFibGVkIjp0cnVlLCJyb2xlIjoidXNlciIsImV4cCI6MTcyMzAwNjUzMCwiaWF0IjoxNzIzMDAyOTMwfQ.uSCaLCvXWeIfPOYoIQ1pZXJ9wukvmmPLPt-_1mB9hebV-XjALfRexeBYznS4QiKWPtvqk5-EdJA-IBWwES11xQ
+      jwtToken: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJlbmFibGVkIjp0cnVlLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3MjM5MzYxMzksImlhdCI6MTcyMzkzMjUzOX0.5a47PxCZi3JFFzaU8lgOPAEQXzf-9Q_CDH8vJbn8jMTAV_NR93GVoSkPfchtMQ1GsVd1BgnCDxFf1_-mpeA8PA
     dataPropertyOrder:
       "&":
         - apiHost
@@ -451,8 +451,8 @@ resources:
     isPrivate: false
     metaSortKey: 1722658686281
     _type: environment
-  - _id: jar_bb269b5beb1dd574c70d8b30bf46561b26b84936
-    parentId: wrk_213b7650779f49eaae29115c2bd66dcf
+  - _id: jar_0147b430f20047909ff4f2231257dbf3
+    parentId: wrk_7c2b6b26804f4fdcbfe0b87655e1ffde
     modified: 1722658686283
     created: 1722658686283
     name: Default Jar
