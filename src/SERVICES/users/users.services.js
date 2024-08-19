@@ -5,8 +5,24 @@ const { models } = require("../../LIBRARIES/db/sequelize");
 const RolesServices = require("../roles/roles.services");
 const rolesServices = new RolesServices();
 class UsersServices {
+  async usersInfo() {
+    const users = await models.User.findAll();
+    const numUsers = users.length;
+    return {
+      totalUsers: numUsers,
+    };
+  }
+
   async findAll() {
-    const allUsers = await models.User.findAll();
+    const allUsers = await models.User.findAll({
+      include: [
+        {
+          model: models.Role,
+          as: "role",
+          attributes: ["name"],
+        },
+      ],
+    });
     return allUsers;
   }
 

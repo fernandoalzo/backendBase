@@ -14,6 +14,20 @@ const { checkRole } = require("../../MIDDLEWARES/auth/checkRole.handler");
 const { config } = require("../../CONFIG/config");
 
 router.get(
+  "/usersinfo",
+  passport.authenticate("jwt", { session: false }),
+  checkRole(config.userRoles.role1, config.userRoles.role2),
+  async (req, res, next) => {
+    try {
+      const rtaTest = await service.usersInfo();
+      res.status(200).json(rtaTest);
+    } catch (error) {
+      next(error);
+    }
+  }
+);
+
+router.get(
   "/findall",
   passport.authenticate("jwt", { session: false }),
   checkRole(config.userRoles.role1, config.userRoles.role2),

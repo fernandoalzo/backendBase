@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2024-08-17T22:09:34.359Z
+__export_date: 2024-08-19T02:47:04.875Z
 __export_source: insomnia.desktop.app:v2023.5.8
 resources:
   - _id: req_045464ba78b446ca9ee84b0e9a1c5b28
@@ -88,7 +88,7 @@ resources:
     _type: request_group
   - _id: req_1796c70ec2c04a83a11c0bccd4926f0f
     parentId: fld_eafc72f14cda4a178fa86dc521fec1ed
-    modified: 1722998573032
+    modified: 1724027326575
     created: 1722825114690
     url: "{{ _.apiHost }}/api/v1/auth/validatetoken"
     name: validateToken
@@ -98,7 +98,7 @@ resources:
       mimeType: application/json
       text: >-
         {
-        	"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJlbmFibGVkIjp0cnVlLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3MjMwMDIxNjEsImlhdCI6MTcyMjk5ODU2MX0.j8pOBny3fgRBdTkDCtTO_3gpAVMaaZd9Y8EUr-IXncpMyeaWS_M4MGhPuFykpMUqeawsCvJ4s7nsWoH0d-5uFA"
+        	"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJlbmFibGVkIjp0cnVlLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3MjQwMjg0NzUsImlhdCI6MTcyNDAyNDg3NX0.g5co-FebJLrSzEzipmi88DXptQ9grB1zh0hYEnxz7fkPcOhXQ4L_2-1c9GcW7mLZBu3LxWbfTR3IXlkYIrReFA"
         }
     parameters: []
     headers:
@@ -116,9 +116,52 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
+  - _id: req_9de292a8fcd64ba3ac244e0bf7ec7160
+    parentId: fld_b66b08a6baea426f8f721678021d4851
+    modified: 1724022909283
+    created: 1724022900792
+    url: "{{ _.apiHost }}/api/v1/users/usersInfo"
+    name: usersInfo
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+      - id: pair_29daa828efbb4a858a2a3058e55dd31b
+        name: ""
+        value: ""
+        description: ""
+      - id: pair_fa6428bd01674176a3056e651a028f13
+        name: ""
+        value: ""
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.jwtToken }}"
+    metaSortKey: -1721855316128.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_b66b08a6baea426f8f721678021d4851
+    parentId: wrk_7c2b6b26804f4fdcbfe0b87655e1ffde
+    modified: 1722658696121
+    created: 1722658696121
+    name: users
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1722658696121
+    _type: request_group
   - _id: req_1761c01d9600495496106030b6fa5689
     parentId: fld_b66b08a6baea426f8f721678021d4851
-    modified: 1723000031306
+    modified: 1724026384473
     created: 1722734758848
     url: "{{ _.apiHost }}/api/v1/users/findall"
     name: findAll
@@ -149,21 +192,11 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: fld_b66b08a6baea426f8f721678021d4851
-    parentId: wrk_7c2b6b26804f4fdcbfe0b87655e1ffde
-    modified: 1722658696121
-    created: 1722658696121
-    name: users
-    description: ""
-    environment: {}
-    environmentPropertyOrder: null
-    metaSortKey: -1722658696121
-    _type: request_group
   - _id: req_70b5e42765cd4ec99c64efc63ee18a9c
     parentId: fld_b66b08a6baea426f8f721678021d4851
-    modified: 1723002482816
+    modified: 1723954672410
     created: 1722734677458
-    url: "{{ _.apiHost }}/api/v1/users/findone/4"
+    url: "{{ _.apiHost }}/api/v1/users/findone/1"
     name: findOne
     description: ""
     method: GET
@@ -186,7 +219,7 @@ resources:
     _type: request
   - _id: req_f6f6e418ec8c403aa02bc8ec343038e1
     parentId: fld_b66b08a6baea426f8f721678021d4851
-    modified: 1723002501005
+    modified: 1724031306064
     created: 1722734777843
     url: "{{ _.apiHost }}/api/v1/users/create"
     name: create
@@ -202,10 +235,11 @@ resources:
         	"phone": "3155270159",
         	"password": "password",
         	"address": "Bogota DC",
+        	"roleId": 2,
         	"enabled": true,
         	"reputation": 1000,
-        	"verified": false,
-        	"roleId": 2
+        	"verified": false
+        	
         }
     parameters: []
     headers:
@@ -437,12 +471,12 @@ resources:
     _type: request
   - _id: env_907212a7fdff49dab797ba209806cd19
     parentId: wrk_7c2b6b26804f4fdcbfe0b87655e1ffde
-    modified: 1723932548858
+    modified: 1724035085951
     created: 1722658686281
     name: Base Environment
     data:
       apiHost: 127.0.0.1:3000
-      jwtToken: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJlbmFibGVkIjp0cnVlLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3MjM5MzYxMzksImlhdCI6MTcyMzkzMjUzOX0.5a47PxCZi3JFFzaU8lgOPAEQXzf-9Q_CDH8vJbn8jMTAV_NR93GVoSkPfchtMQ1GsVd1BgnCDxFf1_-mpeA8PA
+      jwtToken: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJlbmFibGVkIjp0cnVlLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3MjQwMzg2NzcsImlhdCI6MTcyNDAzNTA3N30.E0lhYimP0rZX1CqLZleSaVNiVluFg1m3CHHk1Pe1WtYuLII-cX30gQYIY3CTmtB6QRy80F3pcfZ6ArVKy8Kbaw
     dataPropertyOrder:
       "&":
         - apiHost
