@@ -3,7 +3,7 @@ services:
   postgres:
     image: postgres:13
     environment:
-      - POSTGRES_DB=creditCommunity
+      - POSTGRES_DB=backendBase
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=12345
       - TZ=America/Bogota
